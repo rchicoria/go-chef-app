@@ -5,12 +5,15 @@ import { StackNavigator } from 'react-navigation';
 
 import defaultStyles from '@gochef/go-chef-design-system/lib/styles'
 
-import Recipes from '../containers/Recipes'
+import RecipeDetailNavigator from '../navigators/RecipeDetailNavigator'
 import RecipesList from '../containers/RecipesList'
+import LoadRecipe from '../containers/LoadRecipe'
+
 
 export default StackNavigator({
     RecipesView: { screen: RecipesList },
-    RecipeDetail: { screen: Recipes },
+    LoadRecipe: { screen: LoadRecipe },
+    RecipeDetail: { screen: RecipeDetailNavigator,},
 }, {
     navigationOptions: {
         headerStyle: defaultStyles.navBar

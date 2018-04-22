@@ -19,11 +19,11 @@ export default class extends Component {
 
     render(){
         let ingredients = [
-          {name: "CENAS", value: "100g"},
-          {name: "CENAS", value: "100g"},
-          {name: "CENAS", value: "100g"},
-          {name: "CENAS", value: "100g"},
-          {name: "CENAS", value: "100g"},
+          "200 grams of chicken breast",
+          "200 grams of chicken breast",
+          "200 grams of chicken breast",
+          "200 grams of chicken breast",
+          "200 grams of chicken breast",
         ]
 
         return <Ingredients ingredients={ ingredients } />

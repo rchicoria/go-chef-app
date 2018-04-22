@@ -9,7 +9,6 @@ export default class Index extends Component {
         this.state = {}
     }
 	render(){
-
 		return(
             <View style={{ flex: 1,
                     flexDirection: 'column',
@@ -19,9 +18,9 @@ export default class Index extends Component {
                     height: "100%",
                     backgroundColor:'rgba(0,0,0, 0.3)'}}>
 			    <View style={{ height:200, width:'90%', backgroundColor:'deeppink' }} >
-                    <Button onPress={() => {
-                        // Alert.alert("CLICK")
-                        ShareExtension.openURL("gochefapp://home").catch(err => Alert.alert("ERRO"));
+                    <Button onPress={async () => {
+                        const { type, value } = await ShareExtension.data()
+                        ShareExtension.openURL("gochefapp://recipe?url="+value).catch(err => Alert.alert("ERRO"));
                     }} title="Cenas"/>
                 </View>
             </View>
