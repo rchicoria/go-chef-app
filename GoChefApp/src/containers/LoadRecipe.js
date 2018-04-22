@@ -6,7 +6,13 @@ import { parseRecipe } from '../services'
 export default class extends Component {
     async _parseRecipe(recipeUri){
         let data = await parseRecipe(recipeUri)
-        this.props.navigation.navigate('RecipeDetail')
+        console.log(JSON.stringify(data.data))
+        this.props.navigation.navigate('RecipeDetail', {
+            name: data.data.name, 
+            ingredients: data.data.ingredients, 
+            duration: data.data.totalTime+' min',
+            instructions: data.data.instructions
+        })
     }
 
     render() {

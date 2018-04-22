@@ -17,5 +17,5 @@ export const callEndpoint = async (endpoint, method, params, data) => {
 
 export const parseRecipe =  async(uri) => {
     let res = await callEndpoint('/recipes', 'post', null, {'recipeUri': uri})
-    console.log(res)
+    return res;
 }
