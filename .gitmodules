@@ -1,0 +1,3 @@
+[submodule "GoChefApp/lib/go-chef-design-system"]
+	path = GoChefApp/lib/go-chef-design-system
+	url = git@github.com:rchicoria/go-chef-design-system.git
