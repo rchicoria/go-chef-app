@@ -51,6 +51,7 @@
 		322C4785208B3FD3009E51BA /* libthird-party.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF0FFE52056DD460020B375 /* libthird-party.a */; };
 		322C4786208B3FD3009E51BA /* libyoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA51DF850E9000B6D8A /* libyoga.a */; };
 		322C4787208B3FD3009E51BA /* libyoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA71DF850E9000B6D8A /* libyoga.a */; };
+		32627D82208C68E400DC6C71 /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 322C47CA208BFEFA009E51BA /* libRNSVG.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		9840E32F05E7442BA488E7C3 /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D1A399E1984BEBB970DE08 /* libRNSVG.a */; };
@@ -420,6 +421,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32627D82208C68E400DC6C71 /* libRNSVG.a in Frameworks */,
 				322C4763208B3FD3009E51BA /* libcxxreact.a in Frameworks */,
 				322C4764208B3FD3009E51BA /* libcxxreact.a in Frameworks */,
 				322C4765208B3FD3009E51BA /* libdouble-conversion.a in Frameworks */,
